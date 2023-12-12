@@ -21,7 +21,7 @@ def webhooks():
     ):
         return jsonify({"hub": request.args.get("hub.challenge")}), 200
     else:
-        return "Error, wrong validation token", 400
+        return "Error, wrong validation token!", 400
 
 
 # @app.route("/", methods=["POST"])
